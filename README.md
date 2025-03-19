@@ -1,11 +1,5 @@
 <b>CryptoDbss</b> allows short messages to be published on the blockchain as a transaction. This can be annotated to be linked as metadata, for example, the SHA of a data or document. In this case, an example of its use with IPFS will be given. <br><br>
 
-What is IPFS? <br><br>
-
-Interplanetary File System, as its acronym <b>IPFS</b>, is a decentralized network protocol that allows its users to share any file, or data between connected nodes. It can also be called <b>Web3</b> protocol, therefore anyone running a node can share or download what others share, without the need for a centralized server. These files, in turn, can be in directories, which allows for more orderly and precise indexing, to access them, it is necessary to know the <b>CID</b> (content identifier). This is generated when the file is uploaded. Each <b>CID</b> for each file and directory is unique, so there is only one unique one for each one, just like a hash, which is generally represented in base58. <br><br>
-
-Many <b>decentralized apps</b> and <b>DAO's</b> that use the term <b>web3</b> implement it through <b>IPFS</b>.<br><br>
-
 Some advantages of implement <b>IPFS</b> <br/>
  <ol>
   <li>Save space on long messages, resulting in lighter and lower-cost transactions.</li>
@@ -14,11 +8,6 @@ Some advantages of implement <b>IPFS</b> <br/>
   <li>Increase capabilities to make more Web3 implementations.</li>
 </ol> 
 
-Okay, and now how do we implement the <b>IPFS</b> protocol in <b>cryptoDBSS</b>??<br><br>
-
-As mentioned above, <b>CryptoDBSS</b> allows hosting short messages, 32 bytes in size to be exact. The <b>CID</b> can be coded into base16 and be reinterpreted for use as a post message on <b>CryptoDbSS</b>. This can then be read from the blockchain and be  reconstructed as a <b>CID</b> using <b>base32</b> or <b>base58</b>, and then, will recover the data from <b>IPFS</b>.<br><br>
-
-On the cryptoDBSS GitHub, there is already a repo illustrating the use of this implementation, using a local client and kubo (the official IPFS version in Go).<br><br>
 
 The command is executed to post a file containing the following message in a transaction:<br>
 
